@@ -1,22 +1,13 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Grid from "@mui/material/Grid";
 
-import axios from "@/axios";
-
 import { useDispatch, useSelector } from "react-redux";
-import {
-  selectPostsData,
-  selectPosts,
-  selectPostsTags,
-} from "@/redux/selectors/postsSelectors";
-import { selectTags, selectTagsData } from "@/redux/selectors/tagsSelectors";
+import { selectPostsData, selectPosts } from "@/redux/selectors/postsSelectors";
+import { selectTagsData } from "@/redux/selectors/tagsSelectors";
 import { fetchPosts, fetchTags } from "@/redux/slices/postsSlice";
-import {
-  selectIsAuth,
-  selectUserData,
-} from "@/redux/selectors/authSelectors.js";
+import { selectUserData } from "@/redux/selectors/authSelectors.js";
 
 import { Post } from "../components/Post";
 import { TagsBlock } from "../components/TagsBlock";
