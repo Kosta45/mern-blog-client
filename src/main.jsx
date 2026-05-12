@@ -10,12 +10,12 @@ import CssBaseline from "@mui/material/CssBaseline";
 import "./index.css";
 
 import { ThemeProvider } from "@mui/material";
-import { theme } from "./theme";
+import { theme } from "@/theme";
 
 import App from "./App.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
+  <>
     <CssBaseline />
     <ThemeProvider theme={theme}>
       <BrowserRouter>
@@ -24,5 +24,5 @@ createRoot(document.getElementById("root")).render(
         </Provider>
       </BrowserRouter>
     </ThemeProvider>
-  </StrictMode>,
+  </>,
 );
