@@ -1,10 +1,15 @@
-import React from 'react';
-import styles from './UserInfo.module.scss';
+import styles from "./UserInfo.module.scss";
+import PersonIcon from "@mui/icons-material/Person";
 
 export const UserInfo = ({ avatarUrl, fullName, additionalText }) => {
   return (
     <div className={styles.root}>
-      <img className={styles.avatar} src={avatarUrl || '/noavatar.png'} alt={fullName} />
+      {avatarUrl ? (
+        <img className={styles.avatar} src={avatarUrl} alt={fullName} />
+      ) : (
+        <PersonIcon />
+      )}
+      <img className={styles.avatar} src={avatarUrl} alt={fullName} />
       <div className={styles.userDetails}>
         <span className={styles.userName}>{fullName}</span>
         <span className={styles.additional}>{additionalText}</span>
