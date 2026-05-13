@@ -30,7 +30,7 @@ The application allows users to register, log in, create posts, upload images an
 
 # Tech Stack
 
-bash
+```bash
 ├── React + Vite
 ├── Redux Toolkit
 ├── React Router
@@ -38,24 +38,49 @@ bash
 ├── Material UI
 ├── SCSS
 └── JWT Authentication
-Backend Repository
+````
+
+---
+
+# Backend Repository
 
 Backend API:
 
 https://github.com/Kosta45/mern-easy-blog-api
 
-Installation
-Clone repository
+---
+
+# Installation
+
+## Clone repository
+
+```bash
 git clone https://github.com/Kosta45/mern-easy-blog-client.git
-Install dependencies
+```
+
+## Install dependencies
+
+```bash
 npm install
-Start development server
+```
+
+## Start development server
+
+```bash
 npm run dev
+```
 
 Application will be available at:
 
+```bash
 http://localhost:5173
-Project Structure
+```
+
+---
+
+# Project Structure
+
+```bash
 src/
 ├── components/
 ├── pages/
@@ -63,34 +88,51 @@ src/
 ├── utils/
 ├── App.jsx
 └── main.jsx
-Technical Highlights
-Redux Toolkit for global state management
-Axios interceptors for API requests
-JWT-based authentication flow
-React Router navigation
-Modular component structure
-REST API integration
-File uploads with backend API
-Learning Goals
+```
+
+---
+
+# Technical Highlights
+
+* Redux Toolkit for global state management
+* Axios interceptors for API requests
+* JWT-based authentication flow
+* React Router navigation
+* Modular component structure
+* REST API integration
+* File uploads with backend API
+
+---
+
+# Learning Goals
 
 This project was built to practice:
 
-MERN stack architecture
-Frontend and backend integration
-Authentication workflows
-CRUD operations
-REST API communication
-State management with Redux Toolkit
-Deployment
+* MERN stack architecture
+* Frontend and backend integration
+* Authentication workflows
+* CRUD operations
+* REST API communication
+* State management with Redux Toolkit
 
-Frontend:
+---
 
-mern-easy-blog-client.netlify.app
+# Deployment
 
-Backend:
+## Frontend
+
+https://mern-easy-blog-client.netlify.app
+
+## Backend
 
 https://github.com/Kosta45/mern-easy-blog-api
 
-Author
+---
+
+# Author
 
 Kostiantyn Lebid
+
+```
+```
+
