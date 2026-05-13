@@ -30,7 +30,7 @@ The application allows users to register, log in, create posts, upload images an
 
 # Tech Stack
 
-```bash
+bash
 ├── React + Vite
 ├── Redux Toolkit
 ├── React Router
