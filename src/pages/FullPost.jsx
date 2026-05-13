@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "@/axios";
 
@@ -41,7 +41,9 @@ export const FullPost = () => {
         id={dataPost?._id}
         title={dataPost?.title}
         imageUrl={
-          dataPost.imageUrl ? `http://localhost:4444${dataPost.imageUrl}` : ""
+          dataPost.imageUrl
+            ? `${import.meta.env.VITE_API_URL}${dataPost.imageUrl}`
+            : ""
         }
         user={dataPost?.user}
         createdAt={dataPost?.createdAt}

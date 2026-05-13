@@ -52,7 +52,7 @@ export const Home = () => {
               title={postElem?.title}
               imageUrl={
                 postElem?.imageUrl
-                  ? `${process.env.VITE_API_URL}${postElem.imageUrl}`
+                  ? `${import.meta.env.VITE_API_URL}${postElem.imageUrl}`
                   : ""
               }
               user={postElem?.user}
